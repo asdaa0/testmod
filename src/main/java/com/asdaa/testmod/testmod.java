@@ -1,6 +1,7 @@
 package com.asdaa.testmod;
 
 import com.asdaa.testmod.handler.ConfigurationHandler;
+import com.asdaa.testmod.init.ModBlocks;
 import com.asdaa.testmod.init.ModItems;
 import com.asdaa.testmod.proxy.IProxy;
 import com.asdaa.testmod.reference.Reference;
@@ -28,6 +29,7 @@ public class testmod {
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+        ModBlocks.init();
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
