@@ -1,5 +1,6 @@
 package com.asdaa.testmod.block;
 
+import com.asdaa.testmod.creativetab.CreativeTabTM;
 import com.asdaa.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,6 +11,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 public class BlockTM extends Block {
     public BlockTM(Material material){
         super(material);
+        this.setCreativeTab(CreativeTabTM.TM_TAB);
     }
 
     public BlockTM(){

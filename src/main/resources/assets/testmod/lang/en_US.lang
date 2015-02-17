@@ -1,2 +1,4 @@
 item.testmod:testingDragon.name=The Shiny Dragon of Testing
+item.testmod:blaziumIngot.name=Blazium Ingot
 tile.testmod:saladBowl.name=Salad Bowl
+itemGroup.testmod=Test Mod

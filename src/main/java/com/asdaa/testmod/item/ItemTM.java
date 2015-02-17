@@ -1,5 +1,6 @@
 package com.asdaa.testmod.item;
 
+import com.asdaa.testmod.creativetab.CreativeTabTM;
 import com.asdaa.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemStack;
 public class ItemTM extends Item{
     public ItemTM(){
         super();
+        this.setCreativeTab(CreativeTabTM.TM_TAB);
     }
 
     @Override

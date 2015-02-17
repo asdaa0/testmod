@@ -3,6 +3,7 @@ package com.asdaa.testmod;
 import com.asdaa.testmod.handler.ConfigurationHandler;
 import com.asdaa.testmod.init.ModBlocks;
 import com.asdaa.testmod.init.ModItems;
+import com.asdaa.testmod.init.Recipes;
 import com.asdaa.testmod.proxy.IProxy;
 import com.asdaa.testmod.reference.Reference;
 import com.asdaa.testmod.utility.LogHelper;
@@ -12,6 +13,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class testmod {
@@ -31,10 +33,13 @@ public class testmod {
         ModItems.init();
         ModBlocks.init();
     }
+
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
+        Recipes.init();
         LogHelper.info("Initialization Complete!");
     }
+
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
         LogHelper.info("Post Initialization Complete!");
